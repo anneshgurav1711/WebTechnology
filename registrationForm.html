@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="Fire.png">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    
+    <!-- <script>
+        function changeH1(){
+            document.getElementById('h1Id').innerHTML='Form Registered'
+        }
+        function changeP1(){
+         var abc=document.getElementById('pTag').innerHTML;
+        alert('Fill Form');
+        }
+    </script>  -->
+</head>
+   
+
+<body>
+    <form name="newForm" class="newForm">
+        <h2 class="details0" id="h1Id" onclick="changeH1()">Registration Form for job</h2>
+        <hr>
+        <div class="details">
+            Name<span style="color: red;">*</span>:<input type="text" name="name" id="Name" placeholder="Annesh Gurav">
+        </div>
+        <br>
+        <div class="details1">
+            Email:<input type="email" name="email" id="Email" required placeholder="xyz@gmail.com"><span style="color: red;">Error</span>
+        </div>
+        <br>
+        <div class="details1">
+            Password:<input type="text" name="pass1" id="Password">
+        </div>
+        <br>
+        <div class="details1">
+           Confirm Password:<input type="text" name="pass2" id="Password">
+        </div>
+        <br>
+        <div class="details2">
+            Phone:<input type="text" id="num" name="num">
+        </div>
+        <br>
+        <div class="details6">
+            DOB:<input type="date" id="dob">
+        </div>
+        <br>
+        <div class="details3">
+            Age: <input type="number" id="Number">
+        </div>
+        <br>
+        <div class="details4">
+            Address:<input type="text" id="Address">
+        </div>
+        <br>
+        <div class="details5">
+            Company:<input type="text" id="company" disabled value="X-workz">
+        </div>
+        <br>
+        <div class="details7">
+            Educational Qualification:
+            <select>
+                <option>Select option</option>
+                <option>B.Tech</option>
+                <option>BA</option>
+                <option>B.Com</option>
+            </select>
+        </div>
+        <br>
+        <div class="details8">
+            <span>Skills:</span><br>
+            <input type="checkbox" id="check" value="1">Java Programming<br>
+            <input type="checkbox" id="check1" value="2">Web Technology <br>
+            <input type="checkbox" id="check2" value="3">SQL <br>
+            <input type="checkbox" id="check3" value="4">Python Programming
+        </div>
+        <br>
+        <div>
+            <span>Select value from below:</span><br>
+            <input type="checkbox" id="check" value="1">1 <br>
+            <input type="checkbox" id="check1" value="2">2
+        </div>
+        <br>
+        <div>
+            <span>Select below one option:</span><br>
+            <input type="radio" name="radio" id="radio">Yes
+            <input type="radio" name="radio" id="radio1">No
+        </div>
+        <button class="btnClass" type="submit" onclick="formValidation()" id="Submit Button">Submit</button>
+        <button class="btnClass1" type="reset" id="Cancel Button">Cancel</button>
+
+    </form>
+    <footer>
+        <span><b>Address</b></span>
+        <div>
+            #420 14th cross, <br>
+            12th main Vidyanagar <br>
+            Rajajinagar-560010
+        </div>
+        <section>
+            <div>
+                <a id="fb" href="https://www.facebook.com/"><img height="50"
+                        src="https://img.freepik.com/free-psd/3d-rounded-square-with-glossy-facebook-logo_125540-1538.jpg?w=2000"
+                        alt="Facebook"><br>Facebook</a>
+            </div>
+            <span>
+                <div>
+                    <a id="gh" href="https://github.com/"><img height="50"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAaVBMVEX///8XFRUAAAATERH09PTp6ekQDQ0GAAC4uLj39/e8vLzw8PD8/PzAwMALBwe0tLSUlJSfn5+Ih4fg4OB2dnYjIiLQ0NArKirY2Nh/fn7LysppaGhMS0thYWE4NzcdHByop6dVVFRBQUEOIdwWAAAE0ElEQVRoge1a2ZaqOhBtKgyiiCAgo4r8/0ceQAKZIAnQ59x1F/utWyqbJDXsFPn5OXDgwIEDBw7owrOiLMsiy/trjOY1KBuY8CqDs/nLnN41t1sqxzYm2E7Hnl9/b+ZF3BIgQwTU/lIWv0Fq1ukc6Uid1nsvuBmmYC+QDksOaXDZkdW7qbAOzPVuG519FFm/zNVjH9oAHGXWDj7cd2C9VKDF2gEaayttoTlZPOXrNtp6MXTmgSDcQnvXX2OMLZu8gbYlzv8J7XriYBvt2qW+baVtiWt92mw7bUusnbpcYwqgrsgp52eqVCLQLRPPabrILrJz8Fqugt/ptfXolD3S6UH46NHWxCoPfhndJcyt6Ij6J8k40MsfkU0wwHn476VlHlbAGeWV4yPMipNyQfAiiDR4S9KpiD2KSvBbrqR6xvcgDMPgHj+rpP2PD89sfMqjrJ/qtFfSEAH506kp68hyif+4VnSLmxv5UEo6oUaJqHzCzq7UX3jAk7T3G1UBcqZC19dYqAExNQDc5BY9Gn9XXvulZlXQmcrXDMEWJa0VFHf4Q1shpM3b0MnNV/IQi03M4MqNKHjcCCoxHHJWqn6BUXAjBApWKVsB4KTJe2V57bfc6MK9rL5s4BQDyHVtzdiovCsHOhKVBAATAzppbgIrGpxSasLUOr9ZQUuV7+/bywzYKFop/B/sMLJIOtEGKFl5qmSiQhqLjCuCfGPEYLS3NIJj5nndnIHBxDDEkuc/dAToC9EBGVtclvfLe1H7guxs8fF5WAkVF/Zrmdelwwglaw/QJjMBSXExWXfeideA5Q7Tf4XX0FG/JKwUbeF11vpVZGzhNWBtz5GtDLq8O+UNGa+bMMuztjsSsg66HEdeReerlWWQK4R+JakvTNlHycrOLuPO0sLP9nD2qr+y/WLl1cpCmLPD1BID1v/1OxQdPLYzANI8wEnQNR7Na3+pCePQ1HFfFS47XYUTEq+59c+hJTeG/KDCeqJuS+aH90012cL36TST5VkwgoJZLDCrNWgFrXKpquvAnSI7w1L1DOxye2uoVrVkUApkWxIUp1w7Alo7UbIdgs9+naPingJ+iSSUaY8oTISdREXHvKDe+NtPMQM8lA1GFT7m9Jb1CCskbtoipJgBhtoAcV+LruMckA+QVmXOligzL7tmoT/TNVXOeNZ7aHW++rCjGu9I9DUsmOXsLN7KmhTnrOHzExVZwi4Ye76npqvSVPliFL92f25138S+CbssXCeFfE8N5TCegp1e5xSTm84IkHR2nfW6QWP0f+P2CvSLcGD7ChOtnm64vHH0GP3f0Qe318W5miu4eHnemlV03DEssKIgLuOgmMmXpxlefXk2+rSSkhXUoJ5W3ZdH4C1Tysxi3hWSoY2eFyY+yx8W8sJLt5Pb45I4eLWkzSQRr5OsvFNhvTFxGkqCX8DrqOdHFhdcBe22IMRBGOSfmTTA80K64QaJOV1m6L84gj+z2RwvVJuuzLis2lLkhXiVSxEIwVfgpfOGv+02wxePFEQfKed5EaS73JRxc+LuyIxfEbwO5FvXGOPRjMpJxmtDs9O1oO+4+CLUMq8Nqe7HFxluSV+Dl3gBkrXtnyU8yi6CxUnI6n4q91xhEu6tntXP9W0vbzpw4MCBAwf+9/gDAPw29HjkRogAAAAASUVORK5CYII="
+                            alt="Github"><br>GitHub</a>
+                </div>
+            </span>
+            <span>
+                <div>
+                    <a id="tel" href="tel:7259539758"><img height="50"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfUzMQgO7LskAtq5MhfXcl_UTDlPp8bbUX8YvUoQ9Kec4_lFfZjp7Yzlq7INyXnN-uKr4&usqp=CAU"
+                            alt="Call"><br>Contact</a>
+                </div>
+            </span>
+        </section>
+    </footer>
+</body>
+
+<!-- <style>
+    footer {
+        margin-left: 625px;
+        margin-top: -297px;
+    }
+
+    fb {
+        margin-left: 400px;
+        align-items: center;
+    }
+
+    gh,
+    tel {
+        margin-left: 400px;
+        align-items: center;
+    }
+
+    #Form {
+        margin-left: 619px;
+        margin-right: 298px;
+        margin-bottom: -43px;
+        margin-top: 44px;
+        padding: 20px;
+        padding-bottom: 304px;
+        padding-left: 0px;
+        padding-right: 23px;
+        border: 2px solid black;
+        background-color: bisque;
+        align-self: auto;
+    }
+
+    .details {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 11px;
+    }
+
+    .btnClass {
+        margin-top: 38px;
+        margin-left: 69px;
+    }
+
+    .btnClass1 {
+        margin: -178px;
+        margin-left: 107px;
+    }
+
+    .details0 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 35px;
+    }
+
+    .details1 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 36px;
+    }
+
+    .details2 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 5px;
+    }
+
+    .details3 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 12px;
+    }
+
+    .details4 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: -10px;
+    }
+
+    .details5 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 2px;
+    }
+    .details6 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: -49px;
+    }
+    .details7 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: -7px;
+    }
+    .details8 {
+        text-align: initial;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 6px;
+    }
+</style> -->
+
+</html>

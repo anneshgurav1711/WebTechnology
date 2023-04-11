@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--  Modal trigger button  -->
+   <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+     Launch
+   </button>
+   
+   <!-- Modal Body-->
+   <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            Add rows here
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="container">
+    <form>
+      <div class="mb-3 row">
+        <label for="inputName" class="col-4 col-form-label">Name</label>
+        <div class="col-8">
+          <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name">
+        </div>
+      </div>
+      <fieldset class="mb-3 row">
+        <legend class="col-form-legend col-4">Group name</legend>
+        <div class="col-8">
+          you can use radio and checkboxes here
+        </div>
+      </fieldset>
+      <div class="mb-3 row">
+        <div class="offset-sm-4 col-sm-8">
+          <button type="submit" class="btn btn-primary">Action</button>
+        </div>
+      </div>
+    </form>
+   </div>
+   <div class="row">
+     <div class="col-4">
+       <div class="card">
+         <div class="card-body">
+           <h3 class="card-title">Title</h3>
+           <p class="card-text">Text</p>
+         </div>
+       </div>
+     </div>
+     <div class="col-4">
+       <div class="card">
+         <div class="card-body">
+           <h3 class="card-title">Title</h3>
+           <p class="card-text">Text</p>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="row justify-content-center align-items-center g-2">
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+   </div>
+   <div class="container">
+    <div class="row">
+      <div class="col-4">
+        First Column
+      </div>
+      <div class="col-4">
+        Second Column
+      </div>
+      
+    </div>
+   </div>
+   <div class="col-4      ">
+    
+   </div>
+   
+</body>
+</html>

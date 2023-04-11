@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naukri</title>
+    <link rel="icon" type="image/x-icon" href="Fire.png">
+    <link rel="stylesheet" type="text/css" href="Form.css"> 
+    <script src="Form.js"></script>
+    </head>
+
+<body class="newBody">
+    <main>
+        <h2 style="color: rgb(7, 15, 246); text-align: center;" id="h2Tag" onclick="changeH3()">Admission Details</h2>
+        <form class="newFormClass" name="documentForm" onsubmit="return form2Validation()">
+            <div class="inputClass" id="name1">
+                Name<span style="color: red;">*</span>:<input type="text" id="name2" placeholder="AnneshG" required><span class="errorClass"></span>
+            </div>
+            <br>
+            <div class="inputClass" id="email1">
+                email-ID<span style="color: red;">*</span>:<input type="email" id="eMail2"
+                    placeholder="anneshgurav123@gmail.com"><span class="errorClass"></span>
+            </div>
+            <br>
+            <div class="inputClass" id="date1">
+                Date of birth:<input type="date" id="birthDate">
+            </div>
+            <br>
+            <div class="inputClass">
+               Contact No:<span style="color: red;">*</span><input type="number" id="phone2" required><span class="errorClass" id="phone1"></span>
+            </div>
+            <br>
+            <div class="inputClass" id="school1">
+                School-Name<span style="color: red;">*</span>:<input type="text" id="school2" required><span class="errorClass"></span>
+            </div>
+            <br>
+            <div class="inputClass" id="sslcPer1">
+                SSLC-percentage:<input type="number" id="sSLCPercentage">
+            </div>
+            <br>
+            <div class="inputClass" id="puCollege1">
+                Diploma-CollegeName<span style="color: red;">*</span>:<input type="text" id="pUCollege2" required><span class="errorClass"></span>
+            </div>
+            <br>
+            <div class="inputClass" id="puPercentage1">
+                Diploma-percentage:<input type="number" id="puPercentage2">
+            </div>
+            <br>
+            <div class="inputClass">
+
+                Degree:
+                <select id="degreeName">
+                    <option value="B.Sc">BE</option>
+                    <option value="B.E">B.Tech</option>
+                    <option value="B.Com">MSc</option>
+                    <option value="B.Pharm">MBA</option>
+                    <option value="BCA">M.Tech</option>
+                </select>
+            </div>
+            <br>
+            <div class="inputClass">
+                Degree-percentage:<input type="number" id="degreePercentage">
+            </div>
+            <br>
+            <div class="inputClass">
+                Year of passing:<input type="number" id="yearOfPassing">
+            </div>
+            <br>
+            <button type="submit" id="submitButton"  value="Submit">Submit</button>
+            <button type="reset" id="resetButton" value="Reset">Clear</button>
+        </form>
+    </main>
+    <footer class="address">
+        <h2>Contact us:</h2>
+        <address>
+            #21 Shanti Nivas <br>
+            Vidyanagar 4th main road <br>
+            Rajajinagar-560010.
+        </address>
+        <div><span>
+            <a href="https://www.facebook.com/home.php"> <img height="40" src="https://cdn-icons-png.flaticon.com/512/49/49354.png" alt="Facebook"></a>
+        </span>
+        <span>
+            <a href="https://github.com/"> <img height="40" src="https://i.pinimg.com/564x/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.jpg" alt="github"></a>
+        </span>
+        <span>
+            <a href="https://www.instagram.com/"><img height="40" src="https://i.pinimg.com/564x/31/8b/f8/318bf8c3191bb2b9013e10e446e9156d.jpg" alt="insta"></a>
+        </span>
+        <span>
+            <a href="tel:7019629428"><img height="40" src="https://www.shutterstock.com/image-vector/call-logo-design-isolated-on-600w-1710738277.jpg" alt="Contact"></a>
+        </span>
+            
+        </div>
+    </footer>
+
+</body>
+
+</html>

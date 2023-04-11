@@ -1,0 +1,31 @@
+caption {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+    color: rgb(32, 18, 18);
+    border: 2px solid rgb(76, 71, 71);
+    background-color: rgb(233, 239, 240);
+    border-collapse: collapse;
+}
+
+table,
+tr,
+th,
+td {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font: bold;
+    border: 2px solid rgb(147, 22, 22);
+    background-color: rgb(214, 227, 227);
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+table {
+    width: 100%;
+
+}
+#student :hover{
+    background-color: blueviolet;
+}

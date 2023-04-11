@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naukri</title>
+        <script src="Registester.js"></script>
+    </head>
+    <body>
+        <button type="submit" id="btn2" onclick="showValue()">Click</button>
+        <br>
+        <button type="submit" id="btn1" onclick="showDate()">Click</button>
+        <br>
+        <form class="formClass" name="formName" onsubmit="return formValidate()">
+            <div>
+                Name <span style="color: red;">*</span> <input type="text" id="name" name="nameName" placeholder="AG" >
+                <span id="sm" style="color: red;">*Something</span>
+            </div>
+            <br>
+            <div id="div1">
+                Email <span style="color: red;">*</span>:<input type="text" name="email" placeholder="xyz@gmail.com">
+                <span class="errorClass" style="color: red;"></span>
+            </div>
+            <br>
+            <!-- <div>
+                Phone <span style="color: red;">*</span>:<input type="text" name="mob" placeholder="9945117186">
+                <span id="ph" style="color: red;"></span>
+            </div>
+            <br> -->
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </body>
+</html>
